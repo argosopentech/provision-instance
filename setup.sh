@@ -3,5 +3,11 @@ useradd argosopentech
 mkdir /home/argosopentech
 chown argosopentech:argosopentech /home/argosopentech
 cp -r ~/.ssh /home/argosopentech/.ssh
-chsh -s /bin/bash argosopentech
 chown -R argosopentech:argosopentech /home/argosopentech/.ssh
+passwd -d argosopentech
+chsh -s /bin/bash argosopentech
+usermod -aG sudo argosopentech
+
+su argosopentech
+curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/profile.sh > /home/argosopentech/.bashrc
+curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/setup.sh | sh
