@@ -9,5 +9,5 @@ chsh -s /bin/bash argosopentech
 usermod -aG sudo argosopentech
 
 su argosopentech
-curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/profile.sh > /home/argosopentech/.bashrc
+curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/profile.sh > /home/argosopentech/.profile.sh
 curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/setup.sh | sh
