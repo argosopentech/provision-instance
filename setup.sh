@@ -9,6 +9,10 @@ chsh -s /bin/bash argosopentech
 usermod -aG sudo argosopentech
 su argosopentech
 
+# Update and upgrade packages
+sudo apt-get update
+sudo apt-get upgrade -y
+
 # Add swap space
 sudo fallocate -l 10G /swapfile
 sudo chmod 600 /swapfile
