@@ -16,3 +16,4 @@ sudo apt-get upgrade -y
 # Preferences
 curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/setup.sh | sh
 curl https://raw.githubusercontent.com/PJ-Finlay/profile/main/profile.sh > /home/argosopentech/.profile
+sudo chown argosopentech:argosopentech /home/argosopentech/.profile
